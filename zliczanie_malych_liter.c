@@ -7,7 +7,7 @@ int main(){
 	int licznik=0;
 	char znak;
 
-	while(0!=(znak=ciag_znakow[licznik])){
+	while((znak=ciag_znakow[licznik])!=0){
 		if((znak>='a') && (znak<='z')){
 			++histogram[znak - 'a'];
 		}
