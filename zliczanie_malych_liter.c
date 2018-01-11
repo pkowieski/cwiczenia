@@ -2,7 +2,7 @@
 
 int main(){
 
-	const char ciag_znakow[100]="Ala ma kotka";
+	const char ciag_znakow[]="Ala ma malego kotka";
 	int histogram[26]={0};
 	int licznik=0;
 	char znak;
@@ -14,6 +14,7 @@ int main(){
 		}
 		++licznik;
 	}
+
 	for(int x=0;x<26;x++){
 		printf("%c - %d \n",'a'+x,histogram[x]);
 		}
